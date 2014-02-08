@@ -4,6 +4,7 @@ require File.expand_path("../models/abstract_user", __FILE__)
 module Sinatra
   module SinatraAuthentication
     def self.registered(app)
+      puts "app = #{app}"
       #INVESTIGATE
       #the possibility of sinatra having an array of view_paths to load from
       #PROBLEM
